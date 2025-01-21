@@ -7,7 +7,7 @@ import {
   PopoverTrigger,
   PopoverBody,
 } from "../ui/popover";
-import { MdStar } from "react-icons/md";
+// import { MdStar } from "react-icons/md";
 import { InputGroup } from "../ui/input-group";
 
 const Datepicker: React.FC = () => {
@@ -21,7 +21,10 @@ const Datepicker: React.FC = () => {
       Datepicker
       <PopoverRoot>
         <PopoverTrigger asChild>
-          <InputGroup flex="1" startElement={<MdStar fontSize="16px" />}>
+          <InputGroup
+            flex="1"
+            // startElement={<MdStar fontSize="16px" />}
+          >
             <Input placeholder="Date" />
           </InputGroup>
         </PopoverTrigger>

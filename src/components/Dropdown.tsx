@@ -1,7 +1,7 @@
 import { Box, Icon, Spacer, Text } from "@chakra-ui/react";
 import * as React from "react";
 import Select from "./Select";
-import { MdArrowDropDown } from "react-icons/md";
+// import { MdArrowDropDown } from "react-icons/md";
 import { Button } from "../ui/button";
 
 export interface DropdownProps extends React.PropsWithChildren {
@@ -48,14 +48,14 @@ export default Dropdown;
 
 const DropdownButton: React.FC = () => {
   return (
-    <Button variant="outline" width="100%">
+    <Button variant="outline" width="100%" background="#fff">
       <Box whiteSpace="nowrap" overflow="hidden" textOverflow="ellipsis">
         Label
       </Box>
       <Spacer />
-      <Icon fontSize="12px">
+      {/* <Icon fontSize="12px">
         <MdArrowDropDown />
-      </Icon>
+      </Icon> */}
     </Button>
   );
 };

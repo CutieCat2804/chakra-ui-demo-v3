@@ -1,7 +1,7 @@
 import * as React from "react";
 import { NativeSelectField, NativeSelectRoot } from "../ui/native-select";
 import { Icon } from "@chakra-ui/react";
-import { MdArrowDropDown } from "react-icons/md";
+// import { MdArrowDropDown } from "react-icons/md";
 
 export interface SelectProps extends React.PropsWithChildren {
   isInvalid?: boolean;
@@ -17,11 +17,11 @@ const Select: React.FC<SelectProps> = (props) => {
       display={
         showInAllBreakpoints ? undefined : { base: undefined, md: "none" }
       }
-      icon={
-        <Icon fontSize="12px">
-          <MdArrowDropDown />
-        </Icon>
-      }
+      // icon={
+      //   <Icon fontSize="12px">
+      //     <MdArrowDropDown />
+      //   </Icon>
+      // }
       width="auto"
     >
       <NativeSelectField value={value}>

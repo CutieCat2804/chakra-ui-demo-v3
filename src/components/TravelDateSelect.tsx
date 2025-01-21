@@ -20,7 +20,7 @@ import {
   PopoverTrigger,
   PopoverContent,
 } from "../ui/popover";
-import { MdCalendarToday } from "react-icons/md";
+// import { MdCalendarToday } from "react-icons/md";
 import { Tooltip } from "../ui/tooltip";
 import Datepicker from "./Datepicker";
 import Dropdown from "./Dropdown";
@@ -80,9 +80,9 @@ const TravelDateSelect: React.FC = () => {
               border="2px solid black"
               gap="2"
             >
-              <Icon fontSize="24px">
+              {/* <Icon fontSize="24px">
                 <MdCalendarToday />
-              </Icon>
+              </Icon> */}
               <Text>Trigger Text</Text>
             </Flex>
           </Tooltip>
@@ -104,7 +104,13 @@ const TravelDateSelect: React.FC = () => {
                 setIsActive={setIsTravelDurationOpen}
                 isActive={isTravelDurationOpen}
               >
-                <Box border="1px solid #d3d3d3" borderRadius="5px" padding="2">
+                <Box
+                  border="1px solid #d3d3d3"
+                  borderRadius="5px"
+                  padding="2"
+                  position="absolute"
+                  background="#fff"
+                >
                   {["item1", "item2", "item3"].map(
                     (subuDropdownItem, index) => (
                       <Box key={index}>{subuDropdownItem}</Box>
